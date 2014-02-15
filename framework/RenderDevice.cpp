@@ -286,7 +286,7 @@ int RenderDevice::CreateVertexBuffer(int vertex_array_object, vertex_format::Ver
 	{
 		// Otherwise just push it to the back.
 	
-		id = _hardware_buffers.size();
+		id = (int)_hardware_buffers.size();
 		_hardware_buffers.push_back(buffer);
 	}
 
@@ -330,7 +330,7 @@ int RenderDevice::CreateIndexBuffer(int vertex_array_object, uint32_t index_coun
 	{
 		// Otherwise just push it to the back.
 	
-		id = _hardware_buffers.size();
+		id = (int)_hardware_buffers.size();
 		_hardware_buffers.push_back(buffer);
 	}
 
@@ -366,7 +366,7 @@ int RenderDevice::CreateVertexArrayObject()
 	{
 		// Otherwise just push it to the back.
 	
-		id = _vertex_array_objects.size();
+		id = (int)_vertex_array_objects.size();
 		_vertex_array_objects.push_back(vao);
 	}
 	
@@ -472,7 +472,7 @@ int RenderDevice::CreateShader(const char* vertex_shader_src, const char* fragme
 	{
 		// Otherwise just push it to the back.
 	
-		id = _shaders.size();
+		id = (int)_shaders.size();
 		_shaders.push_back(shader);
 	}
 
