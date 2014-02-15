@@ -16,7 +16,8 @@ Compilation
 ----------------
 
 The project uses Tundra as its build system. Tundra can be downloaded here: https://github.com/deplinenoise/tundra.
-To compile the framework together with the sample you can then simply run tundra in the project directory.
+
+To compile the framework together with the sample you simply run tundra in the project directory.
 
 Sample
 ----------------
